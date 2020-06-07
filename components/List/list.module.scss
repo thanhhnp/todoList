@@ -1,0 +1,28 @@
+.todoWrapper {
+  width: 70%;
+  float: left;
+  ol {
+    padding-left: 15px;
+    li {
+      margin-bottom: 30px;
+    }
+  }
+  input {
+    position: absolute;
+    z-index: 9;
+  }
+  p {
+    font-size: 18px;
+    display: block;
+    padding-left: 10px;
+    position: relative;
+    &.uncompleted {
+      text-decoration: line-through;
+      color: lightseagreen;
+    }
+  }
+  span {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
