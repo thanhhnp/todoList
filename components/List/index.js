@@ -36,7 +36,7 @@ const List = (props) => {
                     Finish
                   </button>
                 )}
-                <button onClick={store.deleteTodo}>Delete</button>
+                <button>Delete</button>
               </div>
             </li>
           );

@@ -7,9 +7,7 @@ class TodoStore {
     this.todos.push(todo);
     console.log(todo.id);
   };
-  deleteTodo = (ind) => {
-    this.todos.splice(ind,1);
-  };
+
   get todoCount() {
     return (
       this.todos.filter((todo) => todo.status === true).length +
@@ -21,7 +19,6 @@ class TodoStore {
 decorate(TodoStore, {
   todos: observable,
   addTodo: action,
-  deleteTodo: action,
   todoCount: computed,
 });
 
